@@ -24,19 +24,72 @@
         "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    width: 80vw;
+    height: 100vh;
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
     grid-area: header;
+    width: auto;
+    height: 25vh;
+    margin: 1rem auto 1rem 5rem;
 }
 .main {
+    display: flex;
     grid-area: main;
+    width: 100vw;
+    height: 60vh;
+    object-fit: contain;
 }
+
+.img_Iphone1{
+    width: 45%;
+    rotate: -9.2deg;
+    position: absolute;
+    left: 65%;
+    z-index: 3;
+}
+
+.img_Iphone2{
+    width: 45%;
+    rotate: -31.2deg;
+    position: absolute;
+    left: 40%;
+    z-index: 2;
+    top: 34.5%;
+    object-fit: cover;
+}
+
+.img_Iphone3{
+    width: 45%;
+    rotate: -49.2deg;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+
 .footer {
+    display: flex;
+    flex-direction: row;
     grid-area: footer;
-    color: #1F85DE;
+    height: auto;
+    margin: 1rem auto;
+    z-index: 3;
+}
+
+.footer img{
+    width: 40px;
+    height: 40px;
 }
 
 .footer a{
     text-decoration: none;
+    font-size: 25px;
+    justify-content: center;
+    color: #1F85DE;
+    margin: auto auto;
 }
