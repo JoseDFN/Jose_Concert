@@ -28,6 +28,10 @@ body {
     margin: 2rem auto 4rem auto;
 }
 
+.container a, .container a::visited, .container a:active{
+    text-decoration: none;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -38,6 +42,9 @@ body {
     height: 15vh;
     margin: 1rem auto;
     color: #A626B1;
+    overflow: visible;
+    background:url(../images/figmaLogo.png) no-repeat center center;
+    background-size: contain;
 }
 .main {
     display: flex;
@@ -107,7 +114,7 @@ body {
     margin: auto auto;
 }
 
-@media (min-width: 600px) and (max-width: 1024px){
+@media (min-width: 600px) and (max-width: 1020px){
     .container {
         display: grid;
         grid-template-areas:
@@ -141,5 +148,65 @@ body {
 
     .img_Iphone1, .img_Iphone2, .img_Iphone3{
         width: 37%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(5, 20%); /* 5 columnas iguales */
+        grid-template-rows: repeat(3, 33%); /* 3 filas */
+        grid-template-areas:
+            "header header main main main "
+            "header header main main main "
+            "footer footer main main main ";
+        width: 100%;
+        height: 100vh;
+        margin: auto auto;
+    }
+
+    .header {
+        grid-area: header; /* Ocupa las dos primeras columnas y las dos primeras filas */
+        display: flex;
+        grid-column: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
+        margin-bottom: auto;
+        margin-left: 50%;
+    }
+
+    .main {
+        grid-area: main; /* Ocupa las columnas 3 a 5 y desde la fila 1 a la 3 */
+        display: flex;
+        grid-column: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        grid-area: footer; /* Ocupa las dos primeras columnas de la tercera fila */
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        grid-column: auto;
+        margin: auto;
+        padding: 50%;
+    }
+
+    .img_Iphone1, .img_Iphone2, .img_Iphone3{
+        width: 24.5%;
+        position: relative;
+        top: 71.5%;
+        transform: translate(-50%, -50%);
+    }
+    .img_Iphone1{
+        left: 60%;
+    }
+    .img_Iphone2{
+        left: 29%;
+        top:62.5%;
     }
 }
