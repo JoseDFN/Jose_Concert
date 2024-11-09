@@ -25,11 +25,7 @@ body {
     grid-template-rows: auto;
     width: 100vw;
     height: 100%;
-    margin: 2rem auto 4rem auto;
-}
-
-.container a, .container a::visited, .container a:active{
-    text-decoration: none;
+    margin: 13% auto 13% auto;
 }
 
 .header {
@@ -46,23 +42,40 @@ body {
     background:url(../images/figmaLogo.png) no-repeat center center;
     background-size: contain;
 }
+
+.header img.ornament_Top{
+    position: fixed;
+    top: -22%;
+    left: -32%;
+    z-index: 1;
+}
+
+.header img.ornament_Bot{
+    position: fixed;
+    bottom: -22%;
+    left: -32%;
+    z-index: 1;
+}
+
 .main {
     display: flex;
     grid-area: main;
     width: 100vw;
-    height: 75vh;
+    height: 70vh;
     object-fit: contain;
 }
 
 .header h1{
     text-shadow: 0px 20px 2px #a526b171;
     font-size: 3rem;
+    z-index: 3;
 }
 
 .header h3{
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 600;
+    z-index: 3;
 }
 
 .img_Iphone1{
@@ -79,7 +92,7 @@ body {
     position:  absolute;
     left: 40%;
     z-index: 2;
-    top: 24.5%;
+    top: 26.5%;
 }
 
 .img_Iphone3{
@@ -88,15 +101,15 @@ body {
     position: absolute;
     left: 26%;
     z-index: 1;
-    top:32%
+    top:34%
 }
 
 .footer {
     display: flex;
     flex-direction: row;
     grid-area: footer;
-    height: 10vh;
-    margin: 0 auto;
+    height: 15vh;
+    margin: 1% auto;
     z-index: 3;
 }
 
@@ -138,6 +151,21 @@ body {
         font-weight: 600;
     }
 
+    .header img.ornament_Top{
+        position: fixed;
+        top: -13%;
+        left: -13%;
+        z-index: 1;
+    }
+    
+    .header img.ornament_Bot{
+        position: fixed;
+        bottom: -10%;
+        left: -10%;
+        z-index: 1;
+    }
+    
+
     .footer {
         height: 15vh;
     }
@@ -148,6 +176,16 @@ body {
 
     .img_Iphone1, .img_Iphone2, .img_Iphone3{
         width: 37%;
+    }
+
+    .img_Iphone2{
+        top: 22%;
+        left: 43%;
+    }
+
+    .img_Iphone3{
+        top: 32%;
+        left: 28%;
     }
 }
 
@@ -162,7 +200,7 @@ body {
             "footer footer main main main ";
         width: 100%;
         height: 100vh;
-        margin: auto auto;
+        margin: 5% auto 5% auto;
     }
 
     .header {
@@ -177,12 +215,55 @@ body {
         margin-left: 50%;
     }
 
+    .header h1{
+        font-size: 7rem;
+        text-shadow: 0px 49px 2px #a526b171;
+    }
+
+    .header h3{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .header img.ornament_Top{
+        position: fixed;
+        top: -9%;
+        left: -8%;
+        z-index: 1;
+    }
+    
+    .header img.ornament_Bot{
+        position: fixed;
+        bottom: -9%;
+        left: -8%;
+        z-index: 1;
+    }    
+
     .main {
         grid-area: main; /* Ocupa las columnas 3 a 5 y desde la fila 1 a la 3 */
         display: flex;
         grid-column: auto;
         justify-content: center;
         align-items: center;
+    }
+
+    .img_Iphone1, .img_Iphone2, .img_Iphone3{
+        width: 24.5%;
+        position: relative;
+        top: 61.5%;
+        transform: translate(-50%, -50%);
+    }
+    .img_Iphone1{
+        left: 65%;
+    }
+    .img_Iphone2{
+        left: 34%;
+        top:52.5%;
+    }
+
+    .img_Iphone3{
+        left: 3%;
+        top: 43%;
     }
 
     .footer {
@@ -192,21 +273,11 @@ body {
         justify-content: center;
         align-items: center;
         grid-column: auto;
-        margin: auto;
-        padding: 50%;
+        margin-top: 30%;
+        margin-left: 50%;
     }
 
-    .img_Iphone1, .img_Iphone2, .img_Iphone3{
-        width: 24.5%;
-        position: relative;
-        top: 71.5%;
-        transform: translate(-50%, -50%);
-    }
-    .img_Iphone1{
-        left: 60%;
-    }
-    .img_Iphone2{
-        left: 29%;
-        top:62.5%;
+    .footer a{
+        font-size: 3rem;
     }
 }
