@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ticket-event-1.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script src="../js/barcode.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
     <title>Ticket Coldplay Event</title>
 </head>
 <body>
-    <h1>hola</h1>
+    <div class="container">
+        <div class="header">
+            <div class="header-row">
+                <img src="../images/back-button.svg" alt="button-back" class="button__back">
+                <img src="../images/option-button-ticket.svg" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="ticket__image">
+                <img src="../images/img-event1-ticket.svg" alt="Ticket Image">
+            </div>
+            <div class="ticket__details">
+                <h2>Coldplay : Music of the Spheres</h2>
+                <h3>Nov 15 2023 ~ Gelora Bung Karno Stadium, Jakarta</h3>
+            </div>
+            <div class="ticket__info">
+                <div>
+                    <h2>Name:</h2>
+                    <h3>Indriyani Puspita</h3><br>
+                    <h2>Date:</h2>
+                    <h3>Nov 15 2023</h3><br>
+                    <h2>Gate:</h2>
+                    <h3>Yellow</h3>
+                </div>
+                <div>
+                    <h2>OrderNumber:</h2>
+                    <h3>CLD09738PL</h3><br>
+                    <h2>Time:</h2>
+                    <h3>9:00 PM</h3><br>
+                    <h2>Seat:</h2>
+                    <h3>West B</h3>
+                </div>
+            </div>
+            <div class="ticket__dot">
+                <img src="../images/ticket-cut.svg" alt="Corte Ticket">
+            </div>
+            <div class="items-column">
+                <div class="barcode-container">
+                    <svg id="barcode"></svg>
+                </div>
+                <div class="text-barcode">
+                    <h5>Scan your barcode at the entry gate.</h>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

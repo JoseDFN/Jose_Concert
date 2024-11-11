@@ -38,6 +38,7 @@ body {
     width: 100vw;
     background-image: url(../images/event-1-details.svg);
     background-size: 110%;
+    grid-area: header;
 }
 
 .details-header-button-back{
@@ -58,6 +59,7 @@ body {
     width: 100vw;
     height: auto;
     gap: 28px;
+    grid-area: main;
 }
 
 .card-info-event-main{
@@ -162,6 +164,7 @@ body {
     height: 8.885vh;
     z-index: 3;
     background-color: #FFFFFF;
+    grid-area: footer;
 }
 
 .footer-info{
