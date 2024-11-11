@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/details-event-1.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+
+    <script src="../js/details-events-1.js" defer></script>
+    <script type="module" src="../js/buy-button-ft.js" defer></script>
+    <title>Detail Event 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+                <img src="../images/back-button.svg" alt="back button" class="details-header-button-back">
+                <img src="../images/options-button-details.svg" alt="" class="details-header-options-button">
+        </div>
+        <div class="main">
+            <div class="card-info-event-main">
+                <h5> <span>Coldplay</span> <span class="tittle-card-info-event-purple">: Music of the Spheres</span></h5>
+                <div class="card-internal-info-row">
+                    <img src="../images/location-logo-ft.svg" alt="location icon" class="icon-details-event">
+                    <p>Gelora Bung Karno Stadium, Jakarta</p>
+                </div>
+                <div class="card-internal-info-row">
+                    <img src="../images/date-logo-ft.svg" alt="date icon" class="icon-details-event">
+                    <p>November 15 2023</p>
+                </div>
+
+                <div class="card-internal-info-row img-group-card">
+                    <img src="../images/details-card-info-img-group-event-1.svg" alt="image group" class="main-image-group">
+                    <h5>50K+ Participants</h5>
+                </div>
+            </div>
+            <div class="details-main-description main-description-description">
+                <div>
+                    <h5>Description</h5>
+                </div>
+                <div>
+                    <p class="dm-sans-normal">Integer id augue iaculis, iaculis orci ut, blandit quam. Donec in elit auctor, finibus quam in, phar. Proin id ligula dictum, covalis enim ut, facilisis massa. Mauris a nisi ut sapien blandit imperdi. Interdum et malesuada fames ac ante ipsum primis in faucibs. Sed posuere egestas nunc ut tempus. Fu ipsum dolor sit amet. <span class="Extra-Content">Read More..</span></p>
+                </div>
+            </div>
+            <div class="details-main-description main-description-location">
+                <div>
+                    <h5>Venue & Location</h5>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9189.439848271591!2d-81.5821248472441!3d28.417189383592444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e781bbdfb5ebbb%3A0x680640f2a2eda612!2sTomorrowland!5e0!3m2!1ses!2sco!4v1731296638429!5m2!1ses!2sco" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="card-internal-info-row footer-info">
+                <div class="">
+                    <h6>Start from</h6>
+                    <h4>IDR1.100.000</h>
+                </div>
+                <div class="button-buy-ft">
+                    <main>
+                        <button id="open_dialog" class="buttonBuy">Buy Ticket</button>
+                        <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
+                            <img src="../images/event-1-details.svg" alt="Illustration of Location Services" />
+                            <h2 id="dialog_title" class="h2">Do you want to confirm your purchase?</h2>
+                            <p id="dialog_description">Coldplay Event: Music of the Spheres</p>
+                            <div class="flex flex-space-between">
+                                <button id="close_dialog">Cancel</button>
+                                <button id="confirm_dialog" class="cta"><a href="../pages/tiket-event-1.html" class="link">Confirm</a></button>
+                            </div>
+                        </dialog>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

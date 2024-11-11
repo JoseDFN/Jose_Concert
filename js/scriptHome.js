@@ -19,5 +19,6 @@ function ToggleNotifyDropdown (event) {
 
 document.addEventListener("click", ToggleNotifyDropdown)
 
-
-const resultBox = document.querySelector(".results");
+document.querySelector('.carousel-item-events.event-1').addEventListener('click', function() {
+  window.location.href = '../pages/detail-event-1.html';
+});
