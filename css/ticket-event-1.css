@@ -8,6 +8,12 @@
     font-optical-sizing: auto;
 }
 
+html, body {
+    height: 100%; /* Asegura que ambos elementos ocupen todo el alto de la pantalla */
+    margin: 0; /* Elimina cualquier margen por defecto */
+    overflow: hidden;
+}
+
 body {
     background: linear-gradient(to bottom right, #91B5FD, #F0DDFF);
     margin: 0 0 0 0;
@@ -17,6 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-y: scroll;
 }
 
 .container {
@@ -209,7 +216,7 @@ body {
     }
 
     .ticket__dot img{
-        width: 102;
+        width: 102%;
         margin-left: -0.1%;
     }
 
@@ -223,5 +230,101 @@ body {
 
     div.text-barcode h5{
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 15% 42.5% 42.5;
+        grid-template-areas:
+          "header header header "
+          "main main main "
+          "main main main ";
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-y: visible;
+        margin-bottom: 2%;
+      }
+
+    .header{
+        height: 100%;
+    }
+
+      div.header-row img.button_back{
+        width: 55px;
+    }
+
+    div.header-row img.button_options{
+        width: 40px;
+    }
+
+    .main{
+        width: 60%;
+        height: 100%;
+    }
+
+    .ticket__image img{
+        width: 85%;
+        border-radius: 30px;
+        margin-bottom: 3.7%;
+    }
+
+    .ticket__details{
+        margin-bottom: 4%;
+    }
+
+    .ticket__details h2{
+        font-size: 2rem;
+    }
+
+    .ticket__details h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: #5F5A5A;
+    }
+
+    .ticket__info h2{
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-bottom: 4.1%;
+    }
+
+    .ticket__info h3{
+        font-size: 1.4rem;
+    }
+
+    .ticket__dot img{
+        width: 100.36%;
+        margin-left: -0.1253623%;
+    }
+
+    div.items-column{
+        height: auto;
+    }
+
+    div.barcode-container{
+        width: 70%;
+        height: 76%;
+    }
+
+    #barcode{
+        width: 82%;
+        height: 85%;
+    }
+
+    div.text-barcode{
+        height: 23%;
+        display: flex;
+        align-items: center;
+    }
+
+    div.text-barcode h5{
+        font-size: 1.4rem;
+        
     }
 }

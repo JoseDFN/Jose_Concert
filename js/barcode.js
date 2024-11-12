@@ -24,7 +24,8 @@ function updateBarcodeSize() {
             lineColor: "#000",
             width: 6,
             height: containerHeight,  // La altura del código de barras debe coincidir con la altura del contenedor
-            displayValue: true
+            displayValue: true,
+            fontSize: 25
         });
     }
 }
