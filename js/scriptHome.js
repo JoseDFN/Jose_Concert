@@ -22,3 +22,7 @@ document.addEventListener("click", ToggleNotifyDropdown)
 document.querySelector('.carousel-item-events.event-1').addEventListener('click', function() {
   window.location.href = '../pages/detail-event-1.html';
 });
+
+document.querySelector('.events-near-me-1').addEventListener('click', function() {
+  window.location.href = '../pages/detail-event-1.html';
+});
