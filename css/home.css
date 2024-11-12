@@ -632,7 +632,7 @@ div.info-right div h3{
 
     .footer{
         width: 100%;
-        height: 100%;
+        height: 110%;
     }
 
     .headerMenu{
@@ -677,7 +677,10 @@ div.info-right div h3{
         height: auto;
   -ms-overflow-style: none; /* Internet Explorer y Edge */
         & > .carousel-item-events-near{
-            min-width: 54%;
+            min-width: 50%;
+            padding-top: 0%;
+            padding-right: 0%;
+            margin-right: 0%;
         }
         
         img.image-event-near-me{
