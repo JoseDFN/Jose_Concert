@@ -10,13 +10,17 @@
 
 body {
     background-color: #FFFFFF;
-    
     min-height: 100vh;
-    
     display: flex;
-    
     align-items: center;
     justify-content: center;
+    overflow-y: scroll; /* Permite el desplazamiento vertical */
+  scrollbar-width: none; /* Firefox: Oculta la barra de desplazamiento */
+  -ms-overflow-style: none; /* Internet Explorer y Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
 }
 
 .container {
@@ -31,6 +35,13 @@ body {
     height: 100vh;
     row-gap: 40px;
     margin: 43px 0px 35px 0px;
+    overflow-y: scroll; /* Permite el desplazamiento vertical */
+  scrollbar-width: none; /* Firefox: Oculta la barra de desplazamiento */
+  -ms-overflow-style: none; /* Internet Explorer y Edge */
+}
+
+.container::-webkit-scrollbar{
+    display: none;
 }
 
 .header {
@@ -39,6 +50,7 @@ body {
     width: 100vw;
     padding-left: 20px;
     padding-right: 21px;
+    grid-area: header;
 }
 
 .menuLines{
@@ -251,6 +263,7 @@ div.carousel-item h5 {
     gap: 16px;
     padding-left: 20px;
     padding-right: 21px;
+    grid-area: main;
 }
 
 .tittle-main{
@@ -361,6 +374,7 @@ div.info-right div h3{
     width: 100vw;
     padding-left: 20px;
     padding-right: 21px;
+    grid-area: footer;
 }
 
 .ft{
@@ -461,7 +475,7 @@ div.info-right div h3{
         font-size: 1.3rem;
     }
 
-    .carousel{
+    div.carousel{
         margin-top: 3%;
 
         & > .carousel-item{
@@ -518,6 +532,171 @@ div.info-right div h3{
     div.row-ft-near img.icon{
         width: 16px;
     }
+}
 
-    
+@media (min-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 33%); /* 5 columnas iguales */
+        grid-template-rows: 24.5% 40% 40%; /* 3 filas */
+        grid-template-areas:
+            "header header header "
+            "main main main "
+            "footer footer footer";
+        width: 100vw;
+        height: 100%;
+        row-gap: 35px;
+        overflow-y: scroll; /* Permite el desplazamiento vertical */
+  scrollbar-width: none; /* Firefox: Oculta la barra de desplazamiento */
+  -ms-overflow-style: none; /* Internet Explorer y Edge */
+    }
+
+    .container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .header{
+        width: 100%;
+        height: auto;
+    }
+
+    .menuLines{
+        width: 45px;
+        height: 45px;
+    }
+
+    div.headerMenu{
+        margin-bottom: 0%;
+    }
+
+    .notify-button{
+        width: 50px;
+        height: 50px;
+    }
+
+    .header h1.title{
+        font-size: 2.9rem;
+    }
+
+    input{
+        font-size: 1.5rem;
+    }
+
+    img.search-logo{
+        width: 20px;
+    }
+
+    img.filters-logo{
+        width: 20px;
+    }
+
+    div.search-box div.row{
+        padding: 0.8%;
+    }
+
+    .carrusel::-webkit-scrollbar {
+        display: none; /* Oculta la barra de desplazamiento en WebKit (Chrome, Safari) */
+    }
+
+    div.carousel{
+        margin-top: 2%;
+        height: 19%;
+        scrollbar-width: none; /* Firefox: Oculta la barra de desplazamiento */
+  -ms-overflow-style: none; /* Internet Explorer y Edge */
+
+
+        & > .carousel-item{
+            height: auto;
+            margin: 0 3%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.carousel-item h5{
+            font-size: 1.2rem;
+            margin: 0 auto;
+            justify-content: center;
+            transform: translateY(0%);
+            position: relative;
+            top: 0%;
+        }
+    }
+
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerMenu{
+        margin-bottom: 2%;
+    }
+
+    div.tittle-main h3{
+        font-size: 1.8rem;
+    }
+
+    div.tittle-main h5{
+        font-size: 1.4rem;
+    }
+
+    div.carousel-Events{
+        scrollbar-width: none; /* Firefox: Oculta la barra de desplazamiento */
+  -ms-overflow-style: none; /* Internet Explorer y Edge */
+
+    & > .carousel-item-events {
+        min-width: 90%;
+    }
+    }
+
+    div.event-info{
+        width: 94%;
+    }
+
+    div.info-left h6{
+        font-size: 1.2rem;
+    }
+
+    div.info-right div p{
+        font-size: 1.1rem;
+    }
+
+    div.info-right div h3{
+        font-size: 1.8rem;
+    }
+
+    div.carousel-Events-ft{
+        scrollbar-width: none; /* Firefox: Oculta la barra de desplazamiento */
+  -ms-overflow-style: none; /* Internet Explorer y Edge */
+        & > .carousel-item-events-near{
+            min-width: 54%;
+        }
+        
+        img.image-event-near-me{
+            width: 65%;
+            margin-bottom: 4%;
+        }
+
+        div.price{
+            font-size: 1rem;
+        }
+
+        div.carousel-item-events-near h6{
+            font-size: 1.2rem;
+        }
+
+        div.carousel-item-events-near p#text-ft{
+            font-size: 1rem;
+        }
+
+        div.row-ft-near img.icon{
+            width: 20px;
+        }
+    }
 }
