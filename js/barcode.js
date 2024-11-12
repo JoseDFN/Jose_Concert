@@ -1,4 +1,4 @@
-document.querySelector('.button__back').addEventListener('click', function() {
+document.querySelector('.button_back').addEventListener('click', function() {
     window.location.href = '../pages/home.html';
 });
 

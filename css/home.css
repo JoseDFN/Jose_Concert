@@ -538,7 +538,7 @@ div.info-right div h3{
     .container{
         display: grid;
         grid-template-columns: repeat(3, 33%);
-        grid-template-rows: 24.5% 40% 40%;
+        grid-template-rows: 24.5% 40% 42.5%;
         grid-template-areas:
             "header header header "
             "main main main "
@@ -612,6 +612,7 @@ div.info-right div h3{
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 1% 0.5%;
         }
 
         div.carousel-item h5{
@@ -673,6 +674,7 @@ div.info-right div h3{
 
     div.carousel-Events-ft{
         scrollbar-width: none; /* Firefox: Oculta la barra de desplazamiento */
+        height: auto;
   -ms-overflow-style: none; /* Internet Explorer y Edge */
         & > .carousel-item-events-near{
             min-width: 54%;
@@ -680,7 +682,8 @@ div.info-right div h3{
         
         img.image-event-near-me{
             width: 65%;
-            margin-bottom: 4%;
+            margin-bottom: 2%;
+            margin-top: 4%;
         }
 
         div.price{
