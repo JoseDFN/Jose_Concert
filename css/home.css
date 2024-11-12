@@ -149,7 +149,7 @@ z-index: 3;
 }
 
 .header h1.title{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -422,4 +422,102 @@ div.info-right div h3{
         padding: 1.725%;
         
     }
+}
+
+@media (min-width: 600px) and (max-width: 1020px){
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 29% 34% 35%;
+        width: 100vw;
+        height: 100vh;
+        row-gap: 38px;
+        margin: 43px 0px 35px 0px;
+    }
+
+    .menuLines{
+        width: 40px;
+        height: 40px;
+    }
+
+    .headerMenu{
+        margin-bottom: 2%;
+    }
+
+    .notify-button{
+        width: 43px;
+        height: 43px;
+    }
+
+    .header h1.title{
+        font-size: 2.5rem;
+    }
+
+    input{
+        font-size: 1.3rem;
+    }
+
+    .carousel{
+        margin-top: 3%;
+
+        & > .carousel-item{
+            margin: 0 3%;
+        }
+    }
+
+    div.carousel-item h5{
+        font-size: 1.15rem;
+    }
+
+    div.tittle-main h3{
+        font-size: 1.5rem;
+    }
+
+    div.tittle-main h5{
+        font-size: 1.2rem;
+    }
+
+    .event-info{
+        width: 92%;
+    }
+
+    div.info-left h6{
+        font-size: 1.15rem;
+    }
+
+    div.info-right div p{
+        font-size: 1.1rem;
+    }
+
+    div.info-right div h3{
+        font-size: 1.7rem;
+    }
+
+    .carousel-Events-ft{
+        & > .carousel-item-events-near{
+            min-width: 43%;
+        }
+
+        .price{
+            font-size: 0.9rem;
+        }
+    }
+
+    div.carousel-item-events-near h6{
+        font-size: 1.15rem;
+    }
+
+    div.carousel-item-events-near p#text-ft{
+        font-size: 1rem;
+    }
+
+    div.row-ft-near img.icon{
+        width: 16px;
+    }
+
+    
 }
