@@ -537,8 +537,8 @@ div.info-right div h3{
 @media (min-width: 1024px) {
     .container{
         display: grid;
-        grid-template-columns: repeat(3, 33%); /* 5 columnas iguales */
-        grid-template-rows: 24.5% 40% 40%; /* 3 filas */
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 24.5% 40% 40%;
         grid-template-areas:
             "header header header "
             "main main main "
@@ -546,7 +546,7 @@ div.info-right div h3{
         width: 100vw;
         height: 100%;
         row-gap: 35px;
-        overflow-y: scroll; /* Permite el desplazamiento vertical */
+        overflow-y: scroll;
   scrollbar-width: none; /* Firefox: Oculta la barra de desplazamiento */
   -ms-overflow-style: none; /* Internet Explorer y Edge */
     }
