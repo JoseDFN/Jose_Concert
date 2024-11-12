@@ -208,6 +208,11 @@ body {
         font-size: 1.4rem;
     }
 
+    .ticket__dot img{
+        width: 102;
+        margin-left: -0.1%;
+    }
+
     .barcode-container{
         width: 80%;
     }
