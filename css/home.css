@@ -568,6 +568,8 @@ div.info-right div h3{
     .header{
         width: 100%;
         height: auto;
+        padding-left: 4%;
+        padding-right: 4%;
     }
 
     .menuLines{
@@ -638,11 +640,15 @@ div.info-right div h3{
     .main{
         width: 100%;
         height: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
 
     .footer{
         width: 100%;
         height: 110%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
 
     .headerMenu{
