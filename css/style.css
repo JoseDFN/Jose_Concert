@@ -28,7 +28,7 @@ body {
     margin: 13% auto 13% auto;
 }
 
-.header {
+.container__header {
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -43,21 +43,21 @@ body {
     background-size: contain;
 }
 
-.header img.ornament_Top{
+.header__ornament--top{
     position: fixed;
     top: -22%;
     left: -32%;
     z-index: 1;
 }
 
-.header img.ornament_Bot{
+.header__ornament--bottom{
     position: fixed;
     bottom: -22%;
     left: -32%;
     z-index: 1;
 }
 
-.main {
+.container__main {
     display: flex;
     grid-area: main;
     width: 100vw;
@@ -65,20 +65,20 @@ body {
     object-fit: contain;
 }
 
-.header h1{
+.header__title{
     text-shadow: 0px 20px 2px #a526b171;
     font-size: 3rem;
     z-index: 3;
 }
 
-.header h3{
+.header__subtitle{
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 600;
     z-index: 3;
 }
 
-.img_Iphone1{
+.main__image--1{
     width: 45%;
     rotate: -9.2deg;
     position: absolute;
@@ -86,7 +86,7 @@ body {
     z-index: 3;
 }
 
-.img_Iphone2{
+.main__image--2{
     width: 45%;
     rotate: -31.2deg;
     position:  absolute;
@@ -95,7 +95,7 @@ body {
     top: 26.5%;
 }
 
-.img_Iphone3{
+.main__image--3{
     width: 45%;
     rotate: -57deg;
     position: absolute;
@@ -104,7 +104,7 @@ body {
     top:34%
 }
 
-.footer {
+.container__footer {
     display: flex;
     flex-direction: row;
     grid-area: footer;
@@ -113,13 +113,13 @@ body {
     z-index: 3;
 }
 
-.footer img{
+.footer__icon{
     width: 40px;
     height: 40px;
     margin: auto 1rem;
 }
 
-.footer a{
+.footer__link{
     text-decoration: none;
     font-size: 2rem;
     justify-content: center;
@@ -140,25 +140,25 @@ body {
         height: 100%;
         margin: 1rem auto;
     }
-    .header h1{
+    .header__title{
         text-shadow: 0px 28.5px 2px #a526b171;
         font-size: 4rem;
     }
     
-    .header h3{
+    .header__subtitle{
         margin-top: 1rem;
         font-size: 3rem;
         font-weight: 600;
     }
 
-    .header img.ornament_Top{
+    .header__ornament--top{
         position: fixed;
         top: -13%;
         left: -13%;
         z-index: 1;
     }
     
-    .header img.ornament_Bot{
+    .header__ornament--bottom{
         position: fixed;
         bottom: -10%;
         left: -10%;
@@ -166,24 +166,24 @@ body {
     }
     
 
-    .footer {
+    .container__footer {
         height: 15vh;
     }
 
-    .footer a{
+    .footer__link{
         font-size: 3rem;
     }
 
-    .img_Iphone1, .img_Iphone2, .img_Iphone3{
+    .main__image{
         width: 37%;
     }
 
-    .img_Iphone2{
+    .main__image--2{
         top: 22%;
         left: 43%;
     }
 
-    .img_Iphone3{
+    .main__image--3{
         top: 32%;
         left: 28%;
     }
@@ -192,8 +192,8 @@ body {
 @media (min-width: 1024px) {
     .container{
         display: grid;
-        grid-template-columns: repeat(5, 20%); /* 5 columnas iguales */
-        grid-template-rows: repeat(3, 33%); /* 3 filas */
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(3, 33%); 
         grid-template-areas:
             "header header main main main "
             "header header main main main "
@@ -203,8 +203,8 @@ body {
         margin: 5% auto 5% auto;
     }
 
-    .header {
-        grid-area: header; /* Ocupa las dos primeras columnas y las dos primeras filas */
+    .container__header {
+        grid-area: header; 
         display: flex;
         grid-column: auto;
         flex-direction: column;
@@ -215,59 +215,59 @@ body {
         margin-left: 50%;
     }
 
-    .header h1{
+    .header__title{
         font-size: 7rem;
         text-shadow: 0px 49px 2px #a526b171;
     }
 
-    .header h3{
+    .header__subtitle{
         font-size: 3rem;
         margin-top: 2rem;
     }
 
-    .header img.ornament_Top{
+    .header__ornament--top{
         position: fixed;
         top: -9%;
         left: -8%;
         z-index: 1;
     }
     
-    .header img.ornament_Bot{
+    .header__ornament--bottom{
         position: fixed;
         bottom: -9%;
         left: -8%;
         z-index: 1;
     }    
 
-    .main {
-        grid-area: main; /* Ocupa las columnas 3 a 5 y desde la fila 1 a la 3 */
+    .container__main {
+        grid-area: main;
         display: flex;
         grid-column: auto;
         justify-content: center;
         align-items: center;
     }
 
-    .img_Iphone1, .img_Iphone2, .img_Iphone3{
+    .main__image{
         width: 24.5%;
         position: relative;
         top: 61.5%;
         transform: translate(-50%, -50%);
     }
-    .img_Iphone1{
+    .main__image--1{
         left: 65%;
     }
-    .img_Iphone2{
+    .main__image--2{
         left: 34%;
         top:52.5%;
     }
 
-    .img_Iphone3{
+    .main__image--3{
         left: 3%;
         top: 43%;
     }
 
-    .footer {
-        grid-area: footer; /* Ocupa las dos primeras columnas de la tercera fila */
+    .container__footer {
+        grid-area: footer;
         display: flex;
         
         justify-content: center;
@@ -277,7 +277,7 @@ body {
         margin-left: 50%;
     }
 
-    .footer a{
+    .footer__link{
         font-size: 3rem;
     }
 }
