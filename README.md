@@ -1,9 +1,7 @@
 # Jose_Concert
-Aplicación de eventos de música que permite a los usuarios explorar, comprar y gestionar entradas para diversos conciertos y eventos musicales.
-
-**Link:** https://joseconcert.netlify.app/
 
 # 🎶 Aplicación de Eventos de Música 🎫
+[**Ver la aplicación en línea**](https://joseconcert.netlify.app/)
 
 Este proyecto consiste en el desarrollo de una aplicación de eventos de música que permite a los usuarios explorar y comprar entradas para diversos conciertos y eventos musicales. La plataforma está diseñada para ofrecer una experiencia intuitiva y enriquecedora, facilitando la búsqueda de eventos según categorías, así como el acceso a información detallada sobre cada evento.
 
